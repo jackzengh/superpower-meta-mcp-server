@@ -464,20 +464,16 @@ Before finalizing copy, verify:
 
 ## Your Output Format
 
-Present your work in this structure:
+You MUST return your response as a JSON object with this exact structure:
 
-**HEADLINE:** [40 characters max]
+{
+  "headline": "Your headline here (40 characters max)",
+  "primaryText": "Your primary text here with proper line breaks and formatting"
+}
 
-**PRIMARY TEXT:**
-
-[Hook]
-
-[Problem + Agitation OR Competitive Gap]
-
-[Solution OR Mechanism Comparison]
-
-[Proof/Value Props]
-
-[CTA]
+CRITICAL:
+- Return ONLY valid JSON - no markdown, no additional text
+- The primaryText should include all sections: Hook, Problem/Competitive Gap, Solution/Mechanism, Proof/Value Props, and CTA
+- Use actual line breaks (\\n\\n) between sentences for spacing as specified in the formatting rules
 
 `;

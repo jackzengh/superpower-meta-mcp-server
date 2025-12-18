@@ -7,11 +7,12 @@ declare namespace Cloudflare {
     durableNamespaces: "MyMCP";
   }
   interface Env {
-    GITHUB_CLIENT_ID: string;
-    GITHUB_CLIENT_SECRET: string;
     ANTHROPIC_API_KEY: string;
     GEMINI_API_KEY: string;
     MCP_OBJECT: DurableObjectNamespace<import("./src/index").MyMCP>;
+    MEDIA_BUCKET: R2Bucket;
+    R2_PUBLIC_URL: string;
+    SIGNED_URL_EXPIRATION_SECONDS: string;
   }
 }
 interface Env extends Cloudflare.Env {}

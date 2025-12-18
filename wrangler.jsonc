@@ -22,13 +22,18 @@
       },
     ],
   },
+  "r2_buckets": [
+    {
+      "bucket_name": "superpower-ad-media",
+      "binding": "MEDIA_BUCKET",
+      "remote": true,
+    },
+  ],
   "observability": {
     "enabled": true,
   },
   "vars": {
-    "GITHUB_CLIENT_ID": "",
-    "GITHUB_CLIENT_SECRET": "",
-    "ANTHROPIC_API_KEY": "",
-    "GEMINI_API_KEY": "",
+    "R2_PUBLIC_URL": "https://pub-27ad5be003ea41fea8f8144d33d3dc6b.r2.dev",
+    "SIGNED_URL_EXPIRATION_SECONDS": "86400",
   },
 }

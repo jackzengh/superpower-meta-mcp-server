@@ -6,7 +6,9 @@
       "Bash(mkdir:*)",
       "mcp__context7__resolve-library-id",
       "mcp__context7__get-library-docs",
-      "Bash(npm run type-check:*)"
+      "Bash(npm run type-check:*)",
+      "Bash(wrangler secret put:*)",
+      "mcp__superpower-ad-copy__create_ad_copy"
     ],
     "deny": [],
     "ask": []
